@@ -1,0 +1,17 @@
+body{
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    li{
+        display: inline;
+    }
+}
+.container{
+    max-width: 1200px;
+    min-width: 1200px;
+}
+*{
+    box-sizing: border-box;
+}

@@ -1,0 +1,21 @@
+$custom-font1: 'Lato', sans-serif;
+$custom-font2: 'Montserrat', sans-serif;
+$bgcolor1:#1E1E1E;
+$bgcolor2:#252525;
+$custom-color1: #EF4035;
+$extra-color1:#404040;
+$white: #fff;
+$font-size1: 14px;
+
+@mixin hover{
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+@mixin button{
+    border: none;
+    width: 190px;
+    height: 55px;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include hover;
+}
