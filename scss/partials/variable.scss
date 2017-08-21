@@ -3,9 +3,15 @@ $custom-font2: 'Montserrat', sans-serif;
 $bgcolor1:#1E1E1E;
 $bgcolor2:#252525;
 $custom-color1: #EF4035;
+$custom-color2: #89322C;
+$custom-color3: #ccc;
 $extra-color1:#404040;
 $white: #fff;
 $font-size1: 14px;
+$font-size2: 130px;
+$font-size3: 80px;
+$extra-color2:rgba(255,255,255,0.2);
+
 
 @mixin hover{
     cursor: pointer;
@@ -18,4 +24,38 @@ $font-size1: 14px;
     text-transform: uppercase;
     font-weight: 700;
     @include hover;
+}
+@mixin custom-text1{
+    font-family: $custom-font2;
+    font-weight: 700;
+}
+@mixin number{
+    @include custom-text1;
+    color: $extra-color2;
+    font-size: 70px;
+    
+}
+@mixin number-title{
+    @include custom-text1;
+    text-transform: uppercase;
+    color: $extra-color2;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+@mixin section-title{
+    @include custom-text1;
+    font-size: 90px;
+    text-transform: capitalize;
+    position: relative;
+    color: $white;
+}
+@mixin section-divider{
+    content: '';
+    border-bottom: solid 2px $white;
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    bottom: -50px;
+    left: 0;
+
 }

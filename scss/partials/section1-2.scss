@@ -1,14 +1,106 @@
-.get-to-know-us{
+.about-features{
     background-image: url('../assets/homebg2.jpg');
     color: $white;
-    height: 1000px;
+    height: 2000px;
     margin: 0;
-    .background{
-        margin: auto;
-        background-image: url('../assets/homebg3.jpg');
-        width: 80%;
-        height: 900px;
-        background-position: center;
-        background-repeat: no-repeat;
+
+    h3{
+        @include number;
     }
+    h5{
+        @include number-title;
+    }
+    h2{
+        @include section-title;
+        
+    }
+    h2:after{
+        @include section-divider;
+    }
+    .about{
+        .background{
+            margin: auto;
+            background-image: url('../assets/homebg3.jpg');
+            width: 80%;
+            height: 900px;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 80px;
+        }
+        .left{
+            display: inline;
+
+            h2{
+                text-align: right;
+                margin-top: 30px;
+                margin-right: 100px;
+            }
+            h2:after{
+                left: 150px;
+                bottom: -50px;
+            }
+            
+        }
+        .right{
+            margin-top: 220px;
+
+            p{
+                font-family: $custom-font1;
+                font-size: 24px;
+                line-height: 1.5;
+            
+                span{
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+            }
+            button{
+                margin-top: 50px;
+                @include button;
+                background: $bgcolor1;
+            }
+            button:hover{
+                @include hover;
+                color: $custom-color1;
+            }
+        }
+    }
+    .features{
+        padding: 70px 0;
+        .first{
+            margin-top: 150px;
+        }
+        .row{
+            .two-col{
+                width: 48%;
+                margin: 30px auto;
+                margin-left: 2%;
+                position: relative;
+                padding: 0 10px;
+                span{
+                    color: $custom-color2;
+                    font-size: 100px;
+                    font-weight: 700;
+                    font-family: $custom-font1;
+                    position: absolute;
+                    left: -20px;
+                    top: -50px;
+                }
+                .questions{
+                    @include section-title;
+                    font-size: 27px;
+                }
+                .descriptions{
+                    font-family: $custom-font1;
+                    color: $custom-color3;
+                    font-size: 18px;
+                    margin-top: 30px;
+                    line-height: 1.8;
+                }
+
+            }
+
+        }
+    }
+    
 }
