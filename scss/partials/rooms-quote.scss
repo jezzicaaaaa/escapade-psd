@@ -1,0 +1,71 @@
+.rooms{
+    background-image: url('../assets/homebg5.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    padding-bottom: 100px;
+
+    .number{
+        @include number;
+    }
+    .title{
+        @include number-title;
+    }
+    h2{
+        @include section-title;
+        
+    }
+    h2:after{
+        @include section-divider;
+    }
+    .rooms-list{
+        display: flex;
+        flex-direction: row;
+        margin-top: 150px;
+        justify-content: space-between;
+        .room-content{
+            width: 33.33%;
+            margin-right: 25px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    button{
+        text-align: center;
+        margin-left: 41%;
+        margin-top: 50px;
+        @include button;
+        background-color: $custom-color1;
+        border: 2px solid $custom-color1;
+        color: $white;
+    }
+    button:hover{
+        @include hover;
+        background: transparent;
+    }
+}
+.quote{
+    background-image: url('../assets/homebg6.jpg');
+    background-position: top;
+    background-size: 104%;
+    height: 670px;
+    background-repeat: no-repeat;
+    text-align: right;
+    p{
+        margin-top: 150px;
+        @include section-title;
+        line-height: 100px;
+    }
+    button{
+        @include button;
+        margin-top: 50px;
+        background-color: $custom-color1;
+        border: 2px solid $custom-color1;
+        color: $white;
+    }
+    button:hover{
+        @include hover;
+        background: transparent;
+    }
+}

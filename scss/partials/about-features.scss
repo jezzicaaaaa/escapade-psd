@@ -1,13 +1,14 @@
 .about-features{
     background-image: url('../assets/homebg2.jpg');
     color: $white;
-    height: 2000px;
+    height: auto;
     margin: 0;
+    padding: 0;
 
-    h3{
+    .number{
         @include number;
     }
-    h5{
+    .title{
         @include number-title;
     }
     h2{
@@ -66,7 +67,8 @@
         }
     }
     .features{
-        padding: 70px 0;
+        padding-top: 70px;
+        padding-bottom: 0;
         .first{
             margin-top: 150px;
         }
@@ -100,6 +102,44 @@
 
             }
 
+        }
+        
+    }
+    .four-icon{
+        margin-top: 45px;
+        background: $bgcolor3;
+        height: 300px;
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .icon-content{
+            justify-content: space-between;
+            flex-direction: column;
+            text-align:center;
+            margin-top: 50px;
+            height: 200px;
+            width: 100%;
+        }
+        
+        i{
+            color: $bgcolor2;
+            font-size: 70px;
+        }
+        .numbers{
+            @include custom-text1;
+            font-size: 50px;
+            color: $white;
+        }
+        p{
+            margin: 15px;
+            color: $bgcolor2;
+            font-family: $custom-font1;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
     }
     
