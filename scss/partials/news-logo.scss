@@ -1,0 +1,54 @@
+.news-blog{
+    background-image: url('../assets/homebg7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+
+    .news-list{
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        .news-content{
+            margin-right: 30px;
+            .news-title{
+                text-transform: capitalize;
+                @include section-title;
+                font-size: 27px;
+                letter-spacing: 2px;
+                margin: 20px 0;
+                display: block;
+            }
+            .news-title:hover{
+                color: $custom-color1;
+                @include hover;
+            }
+            p{
+                color: $white;
+                span{
+                    margin-left: 10px;
+                }
+            }
+
+        }
+    }
+}
+.logo{
+    background-color: $custom-color1;
+    padding: 100px 0;
+    .logo-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img{
+            color: $extra-color2;
+            opacity: .6;
+        }
+        img:hover{
+            opacity: 1;
+            color: $white;
+            @include hover;
+        }
+
+    }
+}

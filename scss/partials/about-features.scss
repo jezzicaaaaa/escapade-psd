@@ -2,22 +2,8 @@
     background-image: url('../assets/homebg2.jpg');
     color: $white;
     height: auto;
-    margin: 0;
-    padding: 0;
 
-    .number{
-        @include number;
-    }
-    .title{
-        @include number-title;
-    }
-    h2{
-        @include section-title;
-        
-    }
-    h2:after{
-        @include section-divider;
-    }
+
     .about{
         .background{
             margin: auto;
@@ -85,7 +71,7 @@
                     font-weight: 700;
                     font-family: $custom-font1;
                     position: absolute;
-                    left: -20px;
+                    left: -25px;
                     top: -50px;
                 }
                 .questions{

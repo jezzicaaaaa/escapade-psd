@@ -15,3 +15,18 @@ ul{
 *{
     box-sizing: border-box;
 }
+.head{
+    .number{
+        @include number;
+    }
+    .title{
+        @include number-title;
+    }
+    h2{
+        @include section-title;
+        
+    }
+    h2:after{
+        @include section-divider;
+    }
+}

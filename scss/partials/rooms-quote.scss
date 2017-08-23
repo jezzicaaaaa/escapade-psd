@@ -1,27 +1,14 @@
 .rooms{
     background-image: url('../assets/homebg5.jpg');
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
-    padding-bottom: 100px;
 
-    .number{
-        @include number;
-    }
-    .title{
-        @include number-title;
-    }
-    h2{
-        @include section-title;
-        
-    }
-    h2:after{
-        @include section-divider;
-    }
     .rooms-list{
         display: flex;
         flex-direction: row;
-        margin-top: 150px;
+        margin-top: 70px;
         justify-content: space-between;
         .room-content{
             width: 33.33%;
