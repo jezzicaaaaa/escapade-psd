@@ -1,0 +1,90 @@
+footer{
+    background-color: $bgcolor1;
+    padding: 100px;
+    color: $white;
+    .four-col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .footer-content{
+            width: 25%;
+            margin-right: 10px;
+            padding: 0 10px;
+
+            .icons{
+                margin-top: 30px;
+                i{
+                    margin-right: 20px;
+                }
+            }
+            img{
+                margin-bottom: 30px;
+            }
+            .content-title{
+                margin-bottom: 40px;
+                margin-top: 10px;
+                @include section-title;
+                font-size: 20px;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+            }
+            p{
+                color: $custom-color3;
+                font-family: $custom-font1;
+                line-height: 1.6;
+            }
+            i, span{
+                color: $custom-color2;
+            }
+            i:hover{
+                color: $white;
+                @include hover;
+            }
+            span:hover{
+                color: $white;
+                @include hover;
+                text-decoration: underline;
+            }
+            h6{
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 14px;
+            }
+            .date{
+                font-size: 10px;
+                color: $white;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            .button-quote{
+                color: $extra-color1;
+                text-align: center;
+            }
+            button{
+                margin-top: 10px;
+                @include button;
+                width: 100%;
+                background: transparent;
+                border: 1px solid $extra-color1;
+                color: $custom-color3;
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+                padding: 0 20px;     
+                i{
+                    color: $custom-color1;
+                    font-size: 15px;
+                }
+            }
+            button:hover{
+                i{
+                    color: $white;
+                }
+            }
+            
+    
+        }
+
+    }
+
+}

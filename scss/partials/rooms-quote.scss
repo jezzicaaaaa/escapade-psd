@@ -4,11 +4,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
-
+    .head{
+        margin-bottom: 120px;
+    }
     .rooms-list{
         display: flex;
         flex-direction: row;
-        margin-top: 70px;
         justify-content: space-between;
         .room-content{
             width: 33.33%;
@@ -36,7 +37,7 @@
     background-image: url('../assets/homebg6.jpg');
     background-position: top;
     background-size: 104%;
-    height: 670px;
+    height: 660px;
     background-repeat: no-repeat;
     text-align: right;
     p{
