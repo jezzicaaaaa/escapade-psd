@@ -2,34 +2,34 @@ header{
     background-color: $bgcolor1;
     color: $white;
     font-size: $font-size1;
-    margin: auto;
     font-family: $custom-font1;
     padding: 5px 0;
     .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-    }
-    p{
-        width: auto;
-        text-align: left;
-        text-transform: uppercase;
-        margin: auto;
-    }
-    ul{
-        text-align: right;
-        list-style: none;
-        li{
-            display: inline;
-            margin-right: 25px;
+        justify-content: space-between;
+        padding: 0;
+    
+        p{
+            text-transform: uppercase;
+            margin: auto 0;
         }
-        i{
-            color: $custom-color1;
-            font-size: 30px;
-        }
-        #search:hover{
-            color:$white;
-            @include hover;
+        ul{
+            text-align: right;
+            list-style: none;
+
+            li{
+                display: inline;
+                margin-right: 25px;
+            }
+            i{
+                color: $custom-color1;
+                font-size: 20px;
+            }
+            #search:hover{
+                color:$white;
+                @include hover;
+            }
         }
     }
 }
