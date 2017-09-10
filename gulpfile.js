@@ -2,7 +2,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var cleanCSS = require('gulp-clean-css');
-
+var babel = require('gulp-babel');
+var concat = require('gulp-concat');
 
 
 //gets the source and passes it to it's destination
@@ -39,3 +40,12 @@ gulp.task('watch', ['browserSync'], function(){
 });
 
 gulp.task('default', ['sass', 'watch']);
+
+var jsAssets = ['node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/jquery/dist/jquery.js', 'node_modules/font-awesome/fonts']
+
+gulp.task('compile-js-assets', function() {
+    return gulp.src(jsAssets)
+    .pipe(babel())
+    .pipe(concat('assets.js'))
+    .pipe(gulp.dest('js/'))
+})

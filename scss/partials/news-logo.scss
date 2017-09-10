@@ -10,6 +10,9 @@
         margin-top: 100px;
         .news-content{
             margin-right: 30px;
+            width: 33.33%;
+            display: flex;
+            flex-direction: column; 
             .news-title{
                 text-transform: capitalize;
                 @include section-title;
@@ -30,6 +33,9 @@
             }
 
         }
+        .news-content:nth-child(3){
+            margin-right: 0;
+        }
     }
 }
 .logo{
@@ -38,11 +44,16 @@
     .logo-content{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
 
         img{
             color: $extra-color2;
             opacity: .6;
+            width: 24%;
+            height: auto;
+            margin-right: 15px;
+        }
+        img:nth-child(4) {
+            margin-right: 0;
         }
         img:hover{
             opacity: 1;

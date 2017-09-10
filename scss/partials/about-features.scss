@@ -1,54 +1,57 @@
 .about-features{
     background-image: url('../assets/homebg2.jpg');
     color: $white;
-    height: auto;
-
 
     .about{
-        .background{
-            margin: auto;
-            background-image: url('../assets/homebg3.jpg');
-            width: 80%;
-            height: 900px;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 80px;
-        }
-        .left{
-            display: inline;
+        margin: auto;
+        background-image: url('../assets/homebg3.jpg');
+        width: 100%;
+        max-width: 1300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 150px 0;
+        .container{
+            width: auto;
+            margin-top: 0;
+            display: flex;
+            justify-content: row;
+        
+            .left{
+                width: 45%;
+                padding-right: 50px;
+                margin-top: -50px;
 
-            h2{
-                text-align: right;
-                margin-top: 30px;
-                margin-right: 100px;
-            }
-            h2:after{
-                left: 150px;
-                bottom: -50px;
-            }
-            
-        }
-        .right{
-            margin-top: 220px;
-
-            p{
-                font-family: $custom-font1;
-                font-size: 24px;
-                line-height: 1.5;
-            
-                span{
-                    font-weight: 600;
-                    letter-spacing: 1px;
+                h2{
+                    text-align: right;
                 }
+                h2:after{
+                    left: 100px;
+                    bottom: -50px;
+                    transform: translateX(-20px);
+                }
+                
             }
-            button{
-                margin-top: 50px;
-                @include button;
-                background: $bgcolor1;
-            }
-            button:hover{
-                @include hover;
-                color: $custom-color1;
+            .right{
+                width: 50%;
+                margin-top: 150px;
+                padding: 0;
+                p{
+                    @include paragraph; 
+                
+                    span{
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                    }
+                }
+                button{
+                    margin-top: 50px;
+                    @include button;
+                    background: $bgcolor1;
+                }
+                button:hover{
+                    @include hover;
+                    color: $custom-color1;
+                }
             }
         }
     }
@@ -59,6 +62,8 @@
             margin-top: 150px;
         }
         .row{
+            display: flex;
+            flex-direction: row;
             .two-col{
                 width: 48%;
                 margin: 30px auto;
@@ -94,7 +99,8 @@
     .four-icon{
         margin-top: 45px;
         background: $bgcolor3;
-        height: 300px;
+        height: auto;
+        padding: 20px 0;
         .flex-row{
             display: flex;
             flex-direction: row;
@@ -106,8 +112,6 @@
             flex-direction: column;
             text-align:center;
             margin-top: 50px;
-            height: 200px;
-            width: 100%;
         }
         
         i{

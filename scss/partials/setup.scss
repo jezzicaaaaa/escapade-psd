@@ -10,7 +10,9 @@ ul{
 }
 .container{
     max-width: 1200px;
-    min-width: 1200px;
+    @media (max-width:991px){
+        max-width: 550px;
+    }
 }
 *{
     box-sizing: border-box;
@@ -23,7 +25,7 @@ ul{
         @include number-title;
     }
     h2{
-        @include section-title;
+        @include section-header;
         
     }
     h2:after{

@@ -1,15 +1,14 @@
 footer{
     background-color: $bgcolor1;
-    padding: 100px;
+    padding: 100px 0;
     color: $white;
     .four-col{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+
         .footer-content{
-            width: 25%;
-            margin-right: 10px;
-            padding: 0 10px;
+            width: 24%;
+            margin: 0 auto;
 
             .icons{
                 margin-top: 30px;

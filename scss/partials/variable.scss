@@ -1,3 +1,4 @@
+//VARIABLES
 $custom-font1: 'Lato', sans-serif;
 $custom-font2: 'Montserrat', sans-serif;
 $bgcolor1:#1E1E1E;
@@ -12,9 +13,10 @@ $white: #fff;
 $font-size1: 14px;
 $font-size2: 130px;
 $font-size3: 80px;
+$desktop: 1199px;
 
 
-
+//MIXINS
 @mixin hover{
     cursor: pointer;
     transition: .3s ease-in-out;
@@ -46,10 +48,21 @@ $font-size3: 80px;
 }
 @mixin section-title{
     @include custom-text1;
-    font-size: 90px;
     text-transform: capitalize;
     position: relative;
     color: $white;
+
+}
+@mixin section-header{
+    @include custom-text1;
+    font-size: 89px;
+    text-transform: capitalize;
+    position: relative;
+    color: $white;
+    @media (max-width:991px){
+        font-size: 60px;
+    }
+    
 }
 @mixin section-divider{
     content: '';
@@ -58,6 +71,16 @@ $font-size3: 80px;
     z-index: 1;
     width: 250px;
     bottom: -50px;
-    left: 0;
-
+    left: 0;    
+    @media(max-width: 991px){
+        width:180px;
+    }
+}
+@mixin paragraph{
+    font-family: $custom-font1;
+    font-size: 24px;
+    line-height: 1.5;
+    @media (max-width:991px){
+        font-size: 20px;
+    }
 }

@@ -3,7 +3,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
+    padding: 50px 0;
+    .container{
+        margin: auto;
+    }
     .head{
         margin-bottom: 120px;
     }
@@ -35,14 +38,13 @@
 }
 .quote{
     background-image: url('../assets/homebg6.jpg');
-    background-position: top;
-    background-size: 104%;
-    height: 660px;
+    background-position: center;
     background-repeat: no-repeat;
     text-align: right;
+    padding: 100px 0;
     p{
-        margin-top: 150px;
-        @include section-title;
+        margin-top: 20px;
+        @include section-header;
         line-height: 100px;
     }
     button{
