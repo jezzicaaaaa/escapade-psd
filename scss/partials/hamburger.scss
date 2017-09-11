@@ -1,0 +1,89 @@
+.drop-down{ 
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: #000;
+    border-bottom:1px solid $white;
+    padding: 5px 0;
+    .container{
+        .left-icon{
+            display: inline;
+            vertical-align: middle;
+            .hamburger{
+                display: inline;
+                background:none;
+                vertical-align: middle;
+                color:$custom-color1;
+                border:0;
+                font-size:30px;
+                font-weight:bold;
+                cursor:pointer;
+                outline:none;
+                z-index:1;
+            }
+            .cross{
+                background:none;
+                display: inline;
+                color:$custom-color1;
+                border:0;
+                font-size:30px;
+                font-weight:bold;
+                cursor:pointer;
+                outline:none;
+                z-index:1;
+            }
+
+        }
+        .right-icon{
+            float: right;
+            display: inline;
+            vertical-align: middle;
+            i{
+                color: $custom-color1;
+                margin-top: 70%;
+                
+            }   
+
+        }
+    }
+    
+}
+.menu{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 5;
+    top: 55px;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    color: #fff;
+    transition: .15s ease-in-out;
+    background: $bgcolor2;
+    &.open-nav{
+        width: 100%;
+        z-index: 110;
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        padding: 0;
+        margin: 0;;
+    }
+    ul li{
+        @include section-title;
+        font-size: 17px;
+        text-transform: uppercase;
+        display: block;
+        padding: 5px 5%;
+        margin: 15px 0;
+        span{
+            color: $custom-color1;
+        }
+        i{
+            float: right;
+            font-size: 30px;
+        }
+    }
+    
+}

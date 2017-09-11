@@ -1,3 +1,8 @@
+@media (min-width:768px){
+    .drop-down{
+        display: none;
+    }
+}
 @media (max-width:$desktop){
     .quote{
         padding: 30px 0;
@@ -66,16 +71,18 @@
 @media (max-width:767px){
     header{
         padding: 30px 0;
+        
         .container{
             flex-direction: column;
             margin: auto;
             text-align: center;
-        }
-        ul{
-            text-align: center;
-            margin: 20px 0;
-            #search{
-                display: none;
+        
+            ul{
+                text-align: center;
+                margin: 20px 0;
+                #search{
+                    display: none;
+                }
             }
         }
     }
@@ -203,7 +210,12 @@
         padding: 80px 0;
         .four-col{
             .footer-content{
-            width: 100%;
+                width: 100%;
+                button{
+                    i{
+                        float: right;
+                    }
+                }
             }
         }
     }

@@ -9,11 +9,31 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
-    <title>Document</title>                                                   
+    <title>Escapade</title>                                                   
     <script src="https://use.fontawesome.com/a6dab44087.js"></script>
 </head>
-
 <body>
+    <div class="drop-down">
+        <div class="container">
+            <div class="left-icon">
+                <button class="hamburger"><i class="fa fa-bars"></i></button>
+                <button class="cross"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="right-icon">
+                <i id="search" class="fa fa-search fa-lg" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><span>Home</span><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <li>about</li>
+            <li>pages<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <li>projects</li>
+            <li>blog <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <li>contacts</li>
+        </ul>
+    </div>
     <header>
         <div class="container">
             <p>have fun!</p>
@@ -24,6 +44,7 @@
             </ul>
         </div>
     </header>
+    
     <nav>
         <div class="container">
             <img src="assets/logo.png" alt="">
@@ -262,6 +283,7 @@
     </footer>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
