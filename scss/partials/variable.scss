@@ -37,6 +37,9 @@ $desktop: 1199px;
     @include custom-text1;
     color: $extra-color2;
     font-size: 70px;
+    @media (max-width: 767px){
+        font-size: 60px;
+    }
     
 }
 @mixin number-title{
@@ -62,6 +65,10 @@ $desktop: 1199px;
     @media (max-width:991px){
         font-size: 60px;
     }
+    @media (max-width: 767px){
+        font-size: 50px;
+    }
+    
     
 }
 @mixin section-divider{
@@ -82,5 +89,8 @@ $desktop: 1199px;
     line-height: 1.5;
     @media (max-width:991px){
         font-size: 20px;
+    }
+    @media (max-width: 767px){
+        font-size: 18px;
     }
 }

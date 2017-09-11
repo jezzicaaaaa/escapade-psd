@@ -12,6 +12,9 @@
 }
 
 @media (max-width:991px){
+    .container{
+        max-width:991px;
+    }
     nav{
         ul{
             display: flex;
@@ -31,6 +34,7 @@
             margin: auto;
         }
         h3{
+
             font-size: 20px;
         }
     }
@@ -82,20 +86,22 @@
         }
     }
     .home{
-        padding: 10% 0;
+        padding: 5% 0;
+        background-size: 200%;
     }
     .about-features{
         padding: 0;
+        height: auto;
         .about{
-            padding: 0;
             max-width: 550px;
+            background-position: left;
         
             .container{
                 flex-direction: column;
-                padding: 70px 15px;
-                margin: 0;
+                height: auto;
             
                 .left{
+                    margin-top: 170px;
                     width: 100%;
                     h2{
                         text-align: right;
@@ -109,14 +115,28 @@
                     margin: auto;
                     text-align: left;
                     margin-top: 100px;
+                    padding-bottom: 200px;
+                    p{
+                        margin: 0;
+                        span{
+                            margin: 0;
+                        }
+                    }
+
+                    button{
+                        margin-top: 20px;
+                    }
                 }
             }
         }
         .features{
+            padding: 30px 0;
             .row{
                 flex-direction: column;
+                margin: 80px 0 20px 0;
                 .two-col{
-                    width: 100%;
+                    margin: 20px auto;
+                    width: 80%;
                     span{
                         left: 50px;
                     }
@@ -125,14 +145,66 @@
                     }
                 }
             }
+            .row:last-child{
+                margin: 0;
+            }
         }
         .four-icon{
+            padding: 10px 0;
             .icon-content{
-                width: 50%;
+                margin-top: 20px;
             }
-            
+            i{
+                font-size: 50px;
+            }
+            .numbers{
+                font-size: 35px;
+            }
+            p{
+                margin: 5px;
+            }
         }
     }
-    
-    
+    .quote{
+        p{
+            font-size: 40px;
+        }
+    }
+    .news-blog{
+        .news-list{
+            flex-wrap: wrap;
+        
+            .news-content{
+                margin-left: 10px;
+                margin-bottom: 20px;
+                width: 60%;
+            }
+            .news-content:nth-child(3){
+                margin-left: 10px;
+            }
+        }     
+    }
+    .logo{
+        padding: 50px 0;
+        .logo-content{
+            flex-wrap: wrap;
+            img{
+                margin: auto;
+                margin-top: 10px;
+                width: auto;
+            }
+            img:nth-child(4){
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+    }
+    footer{
+        padding: 80px 0;
+        .four-col{
+            .footer-content{
+            width: 100%;
+            }
+        }
+    }
 }
